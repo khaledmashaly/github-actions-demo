@@ -1,5 +1,5 @@
 name: CD
-on: push
+on: [push, pull_request]
 jobs:
   deploy:
     runs-on: ubuntu-18.04
