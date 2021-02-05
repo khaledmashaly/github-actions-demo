@@ -18,6 +18,6 @@ public class GithubActionsTutorialApplication {
 class HomeController {
 	@GetMapping
 	public String getHome() {
-		return "Hello, World!";
+		return "Hello, Khaled!";
 	}
 }
