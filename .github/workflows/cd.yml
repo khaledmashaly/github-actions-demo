@@ -1,0 +1,14 @@
+name: CD
+on: push
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run the test suite
+        run: ./mvnw test
+
+      - name: build the jar
+        run: ./mvnw package
